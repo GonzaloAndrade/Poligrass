@@ -24,7 +24,7 @@ SECRET_KEY = 'o8iybyd(@m(^%7&y2(j3lu2^i$6&o_u=r_7%!*f8^5d$a$cqu0'
 DEBUG = True
 TEMPLATE_DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['poligrass.com.ec']
 
 
 # Application definition
