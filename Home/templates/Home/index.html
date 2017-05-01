@@ -1,0 +1,847 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="description" content="Somos los principales distribuidores de Césped Sintético en Ecuador. Te garantizamos soluciones rápidas y con los más altos estándares de calidad.">
+    <meta name="author" content="Poligrass">
+    <title>Poligrass</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="{% static 'Home/css/bootstrap/bootstrap.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- Retina.js - Load first for faster HQ mobile images. -->
+    <script src="{% static 'Home/js/plugins/retina/retina.min.js' %}"></script>
+    <!-- Font Awesome -->
+    <link href="{% static 'Home/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <!-- Default Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic'
+          rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:400,100,200,300,600,500,700,800,900' rel='stylesheet'
+          type='text/css'>
+    <!-- Modern Style Fonts (Include these is you are using body.modern!) -->
+    <link rel="icon" href="{% static 'Home/img/favicon.png' %}">
+    <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Vintage Style Fonts (Include these if you are using body.vintage!) -->
+    <link href='http://fonts.googleapis.com/css?family=Sanchez:400italic,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cardo:400,400italic,700' rel='stylesheet' type='text/css'>
+    <!-- Plugin CSS -->
+    <link href="{% static 'Home/css/plugins/owl-carousel/owl.carousel.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'Home/css/plugins/owl-carousel/owl.theme.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'Home/css/plugins/owl-carousel/owl.transitions.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'Home/css/plugins/magnific-popup.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'Home/css/plugins/background.css' %}" rel="stylesheet" type="text/css">
+    <link href="{% static 'Home/css/plugins/animate.css' %}" rel="stylesheet" type="text/css">
+    <!-- Vitality Theme CSS -->
+    <link href="{% static 'Home/css/vitality-green.css' %}" rel="stylesheet" type="text/css">
+    <!-- IE8 support for HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body id="page-top">
+
+
+<div class="button2">
+	<h3>Sign Up Now Free!</h3>
+	<p>30 day risk free trial.</p>
+</div>
+
+<!-- Navigation -->
+<!-- Note: navbar-default and navbar-inverse are both supported with this theme. -->
+<nav class="navbar navbar-inverse navbar-fixed-top navbar-expanded">
+    <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top">
+                <img src="{% static 'Home/img/logo.png' %}" class="img-responsive" alt="">
+            </a>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a class="page-scroll" href="#page-top"></a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#about">Sobre Nosotros</a>
+                </li>
+                                <li>
+                    <a class="page-scroll" href="#products">Productos</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#work">Proyectos</a>
+                </li>
+                <li>
+                    <a class="page-scroll" href="#contact">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<!-- Instructions: Set your background image using the URL below. -->
+<header class="video">
+    <div class="overlay"></div>
+    <div class="intro-content">
+        <img src="{% static 'Home/img/profile.png' %}" class="img-responsive img-centered" alt="">
+        <div class="brand-name">Expertos en Césped Sintético</div>
+        <hr class="colored">
+        <div class="brand-name-subtext">Tel: 0993080261 - 0993928940</div>
+    </div>
+    <div class="scroll-down page-scroll">
+        <a class="btn page-scroll" href="#about"><i class="fa fa-angle-down"></i></a>
+    </div>
+</header>
+<section id="about">
+    <div class="container-fluid">
+        <div class="row text-center">
+            <div class="col-lg-12 wow fadeIn">
+                <h1>Calidad garantizada</h1>
+                <p>Somos los principales distribuidores de Ecuador.</p>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row text-center content-row">
+            <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".2s">
+                <div class="about-content">
+                    <img src="{% static 'Home/img/fifa.png' %}" style="height: 130px">
+                    <h3>Certificación FIFA</h3>
+{#                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut#}
+{#                        labore et dolore magna aliqua.</p>#}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".4s">
+                <div class="about-content">
+                    <img src="{% static 'Home/img/iso.png' %}" style="height: 130px">
+                    <h3>Certificación ISO</h3>
+{#                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut#}
+{#                        labore et dolore magna aliqua.</p>#}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".6s">
+                <div class="about-content">
+                    <img src="{% static 'Home/img/quality-control-stamp.png' %}" style="height: 130px">
+                    <h3>Máxima Calidad</h3>
+{#                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut#}
+{#                        labore et dolore magna aliqua.</p>#}
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6 wow fadeIn" data-wow-delay=".8s">
+                <div class="about-content">
+                    <img src="{% static 'Home/img/ecologico.png' %}" style="height: 130px">
+                    <h3>Producto Ecológico</h3>
+{#                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut#}
+{#                        labore et dolore magna aliqua.</p>#}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<aside class="cta-quote" style="background-image: url('{% static 'Home/img/bg-aside.jpg' %}');">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                    <span class="quote">Somos una empresa <span class="text-primary">líder e innovadora</span> con más de 6 años en el mercado
+                          <span class="text-primary">nacional e internacional.</span>
+                    <hr class=" colored">
+                    <a class="btn btn-outline-light page-scroll" href="#contact">Contáctanos</a>
+            </div>
+        </div>
+    </div>
+</aside>
+<section id="products" class="bg-gray">
+    <div class="container text-center wow fadeIn">
+        <h2>Productos</h2>
+        <div class="col-lg-6" data-vp-repeat="false" align="center" style="padding:15px;">
+            <div class=" box bg1 left animate-left hiddenme visible animated fadeInLeft" style="margin-top:20px">
+                <div class="box-container"></div>
+                <div class="box-footer">
+                    <div class="box-title">
+                        Monofilamento TOP
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" data-vp-repeat="false" align="center" style="padding:15px;">
+            <div class="box bg2 right animate-right hiddenme visible animated fadeInRight" style="margin-top:20px">
+                <div class="box-container"></div>
+                <div class="box-footer">
+                    <div class="box-title">
+                        Monofilamento PRO
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" data-vp-repeat="false" align="center" style="padding:15px;">
+            <div class="box bg3 left animate-left hiddenme visible animated fadeInLeft" style="margin-top:20px">
+                <div class="box-container"></div>
+                <div class="box-footer">
+                    <div class="box-title">
+                        Monofilamento Estrella W
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" data-vp-repeat="false" align="center" style="padding:15px;">
+            <div class="box bg4 right animate-right hiddenme visible animated fadeInRight" style="margin-top:20px">
+                <div class="box-container"></div>
+                <div class="box-footer">
+                    <div class="box-title">
+                        Monofilamento PRO FIFA 50
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" data-vp-repeat="false" align="center" style="padding:15px;">
+            <div class=" box bg5 left animate-left hiddenme visible animated fadeInLeft" style="margin-top:20px">
+                <div class="box-container"></div>
+                <div class="box-footer">
+                    <div class="box-title">
+                        Pistas atléticas
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-6" data-vp-repeat="false" align="center" style="padding:15px;">
+            <div class=" box bg6 right animate-right hiddenme visible animated fadeInRight" style="margin-top:20px">
+                <div class="box-container"></div>
+                <div class="box-footer">
+                    <div class="box-title">
+                        Caucho Granulado
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="work" class="bg-gray">
+    <div class="container text-center wow fadeIn">
+        <h2>Nuestros Proyectos</h2>
+        <hr class="colored">
+        <p>Conoce los trabajos de calidad que hemos realizado en todo el país.</p>
+    </div>
+</section>
+<section class="portfolio-carousel wow fadeIn">
+    <div class="item" style="background-image: url('{% static 'Home/img/portfolio/bg-1.jpg' %}')">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <div class="project-details">
+{#                        <img src="{% static 'Home/img/client-logos/logo-1.png' %}" class="img-responsive client-logo"#}
+{#                             alt="">#}
+                        <span class="project-name">Residencia Vía a la Costa</span>
+                        <span class="project-description">Urbanización Vía a la Costa</span>
+                        <hr class="colored">
+                        <a href="#portfolioModal1" data-toggle="modal" class="btn btn-outline-light">Ver Detalle <i
+                                class="fa fa-long-arrow-right fa-fw"></i></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="item" style="background-image: url('{% static 'Home/img/portfolio/bg-2.jpg' %}')">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <div class="project-details">
+                        <img src="{% static 'Home/img/client-logos/logo-2.png' %}" class="img-responsive client-logo" alt="">
+                        <span class="project-name">Ciudad Deportiva Pérez Perasso</span>
+                        <span class="project-description">Cancha de Fútbol</span>
+                        <hr class="colored">
+                        <a href="#portfolioModal2" data-toggle="modal" class="btn btn-outline-light">Ver Detalle <i
+                                class="fa fa-long-arrow-right fa-fw"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item" style="background-image: url('{% static 'Home/img/portfolio/bg-3.jpg' %}')">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <div class="project-details">
+{#                        <img src="{% static 'Home/img/client-logos/logo-1.png' %}" class="img-responsive client-logo"#}
+{#                             alt="">#}
+                        <span class="project-name">Complejo Deportivo Montañita</span>
+                        <span class="project-description">Cancha de Fútbol</span>
+                        <hr class="colored">
+                        <a href="#portfolioModal3" data-toggle="modal" class="btn btn-outline-light">Ver Detalle <i
+                                class="fa fa-long-arrow-right fa-fw"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="item" style="background-image: url('{% static 'Home/img/portfolio/bg-4.jpg' %}')">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-4 col-md-push-8">
+                    <div class="project-details">
+{#                        <img src="{% static 'Home/img/client-logos/logo-1.png' %}" class="img-responsive client-logo"#}
+{#                             alt="">#}
+                        <span class="project-description">Fundación Guayaquil Siglo XXI</span>
+                        <span class="project-name">Cancha Progreso</span>
+                        <span class="project-description">Cancha de Fútbol</span>
+                        <hr class="colored">
+                        <a href="#portfolioModal4" data-toggle="modal" class="btn btn-outline-light">Ver Detalle <i
+                                class="fa fa-long-arrow-right fa-fw"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container text-center wow fadeIn">
+        {#            <hr class="colored">#}
+        {#            <p>Aquí hay más proyectos.</p>#}
+        {#            <div class="row content-row">#}
+        {#                <div class="col-lg-12">#}
+        {#                    <div class="portfolio-filter">#}
+        {#                        <ul id="filters" class="clearfix">#}
+        {#                            <li>#}
+        {#                                <span class="filter active" data-filter="identity graphic logo web">All</span>#}
+        {#                            </li>#}
+        {#                            <li>#}
+        {#                                <span class="filter" data-filter="identity">Identity</span>#}
+        {#                            </li>#}
+        {#                            <li>#}
+        {#                                <span class="filter" data-filter="graphic">Graphic</span>#}
+        {#                            </li>#}
+        {#                            <li>#}
+        {#                                <span class="filter" data-filter="web">Web</span>#}
+        {#                            </li>#}
+        {#                        </ul>#}
+        {#                    </div>#}
+        {#                </div>#}
+        {#            </div>#}
+        <div class="row">
+            <div class="col-lg-12">
+                <div id="portfoliolist">
+                    <div class="portfolio identity" data-cat="identity" data-toggle="modal">
+                        <div class="portfolio-wrapper">
+                            <img src="{% static 'Home/img/portfolio/grid/small1.jpg' %}" alt="">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <a class="text-title">Zona Recreativa</a>
+                                    <span class="text-category">Roberto Morán</span>
+                                </div>
+                                <div class="caption-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio web" data-cat="web" data-toggle="modal">
+                        <div class="portfolio-wrapper">
+                            <img src="{% static 'Home/img/portfolio/grid/small2.jpg' %}" alt="">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <a class="text-title">Cancha Progreso</a>
+                                    <span class="text-category">Fundación Guayaquil Siglo XXI</span>
+                                </div>
+                                <div class="caption-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio graphic" data-cat="graphic" data-toggle="modal">
+                        <div class="portfolio-wrapper">
+                            <img src="{% static 'Home/img/portfolio/grid/small3.jpg' %}" alt="">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <a class="text-title">Complejo Deportivo Montañita</a>
+                                    <span class="text-category">Montañita</span>
+                                </div>
+                                <div class="caption-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio web" data-cat="web" data-toggle="modal">
+                        <div class="portfolio-wrapper">
+                            <img src="{% static 'Home/img/portfolio/grid/small4.jpg' %}" alt="">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <a class="text-title">Parque Infantil Abrazaditos</a>
+                                    <span class="text-category">Celia Texeira</span>
+                                </div>
+                                <div class="caption-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio graphic" data-cat="graphic" data-toggle="modal">
+                        <div class="portfolio-wrapper">
+                            <img src="{% static 'Home/img/portfolio/grid/small5.jpg' %}" alt="">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <a class="text-title">Cancha de Fútbol</a>
+                                    <span class="text-category">Municipio de Milagro</span>
+                                </div>
+                                <div class="caption-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio web" data-cat="web"  data-toggle="modal">
+                        <div class="portfolio-wrapper">
+                            <img src="{% static 'Home/img/portfolio/grid/small6.jpg' %}" alt="">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <a class="text-title">Ciudad Deportiva Pérez Perasso</a>
+                                    <span class="text-category">Fundación Guayaquil Siglo XXI</span>
+                                </div>
+                                <div class="caption-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio graphic" data-cat="graphic" data-toggle="modal">
+                        <div class="portfolio-wrapper">
+                            <img src="{% static 'Home/img/portfolio/grid/small7.jpg' %}" alt="">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <a class="text-title">Edificio Natural Vitality</a>
+                                    <span class="text-category">Ec. Ramiro Pinto</span>
+                                </div>
+                                <div class="caption-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio graphic" data-cat="graphic" data-toggle="modal">
+                        <div class="portfolio-wrapper">
+                            <img src="{% static 'Home/img/portfolio/grid/small8.jpg' %}" alt="">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <a class="text-title">Complejo de Golf</a>
+                                    <span class="text-category">Driving Range</span>
+                                </div>
+                                <div class="caption-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="portfolio identity" data-cat="identity" data-toggle="modal">
+                        <div class="portfolio-wrapper">
+                            <img src="{% static 'Home/img/portfolio/grid/small9.jpg' %}" alt="">
+                            <div class="caption">
+                                <div class="caption-text">
+                                    <a class="text-title">Río Verde</a>
+                                    <span class="text-category">Jonathan Moreira</span>
+                                </div>
+                                <div class="caption-bg"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="testimonials bg-gray">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-lg-10 col-lg-offset-1">
+                <div class="testimonials-carousel">
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="lead">"Trabajar con Poligrass ha sido una buena experiencia."</p>
+                                <hr class="colored">
+                                <p class="quote">Poligrass nos guió durante todo el proyecto. Se cumplió con los tiempos
+                                    establecidos. Excelente Calidad y Precio.</p>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-img">
+                                        <img src="{% static 'Home/img/testimonials/1.jpg' %}"
+                                             class="img-circle img-responsive" alt="">
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <span class="name">Gonzalo Andrade</span>
+                                        <p class="small">Director de Proyectos</p>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <p class="lead">"Nuestros hijos son felices con su nuevo césped."</p>
+                                <hr class="colored">
+                                <p class="quote">Hemos creado el mejor centro recreativo para nuestros hijos y estoy muy
+                                    contenta con la calidad de servició que nos brindo Poligrass. Muy Recomendado.</p>
+                                <div class="testimonial-info">
+                                    <div class="testimonial-img">
+                                        <img src="{% static 'Home/img/testimonials/2.jpg' %}"
+                                             class="img-circle img-responsive" alt="">
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <span class="name">Raquel Loor</span>
+                                        <p class="small">Urbanización Casa del Sol</p>
+                                        <div class="stars">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cta-form bg-dark">
+    <div class="container text-center">
+        <h3>¡Entérate de promociones y descuentos!</h3>
+        <hr class="colored">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <!-- MailChimp Signup Form -->
+                <div id="mc_embed_signup">
+                    <!-- Replace the form action in the line below with your MailChimp embed action! For more informatin on how to do this please visit the Docs! -->
+                    <form role="form" id="postform"
+                          method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form"
+                          target="_blank" novalidate>
+                        <div class="input-group input-group-lg">
+                            <input type="email" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Email...">
+                            <span class="input-group-btn">
+                                    <button type="submit" name="subscribe" id="mc-embedded-subscribe"
+                                            class="btn btn-primary">Suscribirse!</button>
+                                </span>
+                        </div>
+                        <div id="mce-responses">
+                            <div class="response" id="mce-error-response" style="display:none"></div>
+                            <div class="response" id="mce-success-response" style="display:none"></div>
+                        </div>
+                    </form>
+                </div>
+                <!-- End MailChimp Signup Form -->
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container wow fadeIn">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>Contáctanos</h2>
+                <hr class="colored">
+            </div>
+        </div>
+        <div class="row content-row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <form name="sentMessage" id="contactForm" novalidate>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Nombre</label>
+                            <input type="text" class="form-control" placeholder="Nombre" id="name" required
+                                   data-validation-required-message="Por favor escriba su nombre.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Email</label>
+                            <input type="email" class="form-control" placeholder="Email" id="email" required
+                                   data-validation-required-message="Por favor escriba su email.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Teléfono</label>
+                            <input type="tel" class="form-control" placeholder="Teléfono" id="phone" required
+                                   data-validation-required-message="Por favor escriba su teléfono.">
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <div class="row control-group">
+                        <div class="form-group col-xs-12 floating-label-form-group controls">
+                            <label>Mensaje</label>
+                            <textarea rows="5" class="form-control" placeholder="Mensaje" id="message" required
+                                      data-validation-required-message="Por favor escriba un mensaje."></textarea>
+                            <p class="help-block text-danger"></p>
+                        </div>
+                    </div>
+                    <br>
+                    <div id="success"></div>
+                    <div class="row">
+                        <div class="form-group col-xs-12">
+                            <button id="submitbutton" type="submit" class="btn btn-outline-dark">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</section>
+<footer class="footer" style="background-color:#464846">
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-4 contact-details">
+                <h4><i class="fa fa-phone"></i> Llámanos</h4>
+                <p>045021120</p>
+                <p>0993080261</p>
+                <p>0993928940</p>
+            </div>
+            <div class="col-md-4 contact-details">
+                <h4><i class="fa fa-map-marker"></i> Visítanos</h4>
+                <p>Todos los Santos 128 y Victor Emilio Estrada
+                    <br>Guayaquil, Ecuador.</p>
+            </div>
+            <div class="col-md-4 contact-details">
+                <h4><i class="fa fa-envelope"></i> Email</h4>
+                <p><a href="mailto:ventas@poligrass.com.ec">ventas@poligrass.com.ec</a>
+                </p>
+            </div>
+        </div>
+        <div class="row social">
+            <div class="col-lg-12">
+                <p style="margin-bottom: 20px;">For international support, please contact us at <span class="text-primary"> international@poligrass.com.ec</span></p>
+                <ul class="list-inline">
+                    <li><a href="https://www.facebook.com/poligrasscesped"><i
+                            class="fa fa-facebook fa-fw fa-2x"></i></a>
+                    </li>
+                    <li><a href="https://twitter.com/PoligrassCesped"><i class="fa fa-twitter fa-fw fa-2x"></i></a>
+                    </li>
+                    <li><a href="http://instagram.com/poligrass_ecuador"><i class="fa fa-instagram fa-fw fa-2x"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row copyright">
+            <div class="col-lg-12">
+                <p class="small">&copy; 2016 Poligrass.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Portfolio Modals -->
+<!-- Example Modal 1 -->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true"
+     style="background-image: url('{% static 'Home/img/portfolio/bg-1.jpg' %}')">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+{#                        <img src="{% static 'Home/img/client-logos/logo-1.png' %}" class="img-responsive img-centered"#}
+{#                             alt="">#}
+                        <h2>Residencía Vía a la Costa </h2>
+                        <hr class="colored">
+                    </div>
+                    <div class="col-lg-12">
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <ul class="list-inline item-details">
+                            <li>Cliente: <strong><a>Roberto Morán</a></strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Example Modal 2 -->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true"
+     style="background-image: url('{% static 'Home/img/portfolio/bg-2.jpg' %}')">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <img src="{% static 'Home/img/client-logos/logo-2.png' %}" class="img-responsive img-centered"
+                             alt="">
+                        <h2>CIUDAD DEPORTIVA PÉREZ PERASSO</h2>
+                        <hr class="colored">
+                    </div>
+                    <div class="col-lg-12">
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <ul class="list-inline item-details">
+                            <li>Cliente: <strong><a>Fundación Guayaquil Siglo XXI</a></strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Example Modal 3 -->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true"
+     style="background-image: url('{% static 'Home/img/portfolio/bg-3.jpg' %}')">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+{#                        <img src="{% static 'Home/img/client-logos/logo-1.png' %}" class="img-responsive img-centered"#}
+{#                             alt="">#}
+                        <h2>Complejo Deportivo Montañita</h2>
+                        <hr class="colored">
+                    </div>
+                    <div class="col-lg-12">
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <ul class="list-inline item-details">
+                            <li>Cliente: <strong><a>Montañita</a></strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Example Modal 4 -->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true"
+     style="background-image: url('{% static 'Home/img/portfolio/bg-4.jpg' %}')">
+    <div class="modal-content">
+        <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+                <div class="rl">
+                </div>
+            </div>
+        </div>
+        <div class="modal-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-lg-offset-2">
+{#                        <img src="{% static 'Home/img/client-logos/logo-2.png' %}" class="img-responsive img-centered"#}
+{#                             alt="">#}
+                        <h2>Progreso</h2>
+                        <hr class="colored">
+                    </div>
+                    <div class="col-lg-12">
+                    </div>
+                    <div class="col-lg-8 col-lg-offset-2">
+                        <ul class="list-inline item-details">
+                            <li>Cliente: <strong><a href="http://startbootstrap.com">Fundación Guayaquil Siglo XXI</a></strong>
+                            </li>
+                        </ul>
+                        <button type="button" class="btn btn-default" data-dismiss="modal"><i class="fa fa-times"></i>
+                            Cerrar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Core Scripts -->
+<script src="{% static 'Home/js/jquery.js' %}"></script>
+<script src="{% static 'Home/js/bootstrap/bootstrap.min.js' %}"></script>
+<!-- Plugin Scripts -->
+<script src="{% static 'Home/js/plugins/jquery.easing.min.js' %}"></script>
+<script src="{% static 'Home/js/plugins/classie.js' %}"></script>
+<script src="{% static 'Home/js/plugins/cbpAnimatedHeader.js' %}"></script>
+<script src="{% static 'Home/js/plugins/owl-carousel/owl.carousel.js' %}"></script>
+<script src="{% static 'Home/js/plugins/jquery.magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+<script src="{% static 'Home/js/plugins/background/core.js' %}"></script>
+<script src="{% static 'Home/js/plugins/background/transition.js' %}"></script>
+<script src="{% static 'Home/js/plugins/background/background.js' %}"></script>
+<script src="{% static 'Home/js/plugins/jquery.mixitup.js' %}"></script>
+<script src="{% static 'Home/js/plugins/wow/wow.min.js' %}"></script>
+<script src="{% static 'Home/js/plugins/jqBootstrapValidation.js' %}"></script>
+<!-- Vitality Theme Scripts -->
+<script src="{% static 'Home/js/vitality.js' %}"></script>
+</body>
+
+</html>
+
+<script>
+    $(document).ready(function() {
+       $("#contactForm").submit(function(event){
+           $("#submitbutton").html("Enviando...");
+           var name = $('#name').val();
+           var email = $('#email').val();
+           var phone = $('#phone').val();
+           var textarea = $('#message').val();
+            $.ajax({
+                 type:"POST",
+                 url:"/contact/",
+                'data': {
+                    'name': name,
+                    'email': email,
+                    'phone': phone,
+                    'textarea': textarea,
+                    'csrfmiddlewaretoken': '{{ csrf_token }}',
+                },
+                success: function() {
+                    // Success message
+                    $('#success').html("<div class='alert alert-success'>");
+                    $('#success > .alert-success').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-success')
+                        .append("<strong>Tu mensaje ha sido enviado. </strong>");
+                    $('#success > .alert-success')
+                        .append('</div>');
+
+                    //clear all fields
+                    $('#contactForm').trigger("reset");
+                    $("#submitbutton").html("Enviar");
+                },
+                error: function() {
+                    // Fail message
+                    $('#success').html("<div class='alert alert-danger'>");
+                    $('#success > .alert-danger').html("<button type='button' class='close' data-dismiss='alert' aria-hidden='true'>&times;")
+                        .append("</button>");
+                    $('#success > .alert-danger').append("<strong>Lo sentimos " + name + ", Parece que hubo un problema. Intenta nuevamente más tarde!");
+                    $('#success > .alert-danger').append('</div>');
+                    //clear all fields
+                    $('#contactForm').trigger("reset");
+                    $("#submitbutton").html("Enviar");
+                },
+            });
+            return false; //<---- move it here
+       });
+
+});
+</script>
